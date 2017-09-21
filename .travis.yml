@@ -224,6 +224,14 @@ matrix:
       osx_image: xcode8.3
       compiler: clang
       env: C=clang-802-m64
+    - os: osx
+      osx_image: xcode9
+      compiler: clang
+      env: C=clang-900-m32
+    - os: osx
+      osx_image: xcode9
+      compiler: clang
+      env: C=clang-900-m64
 
 install:
   - uname -a; pwd; id; umask

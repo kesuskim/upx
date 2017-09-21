@@ -132,7 +132,7 @@ fi # BM_CROSS
 if [[ "$CC" == "false" ]]; then # generic
 if [[ -z $BM_CROSS ]]; then
     case $BM_C in
-        clang | clang-m?? | clang-3.4-m?? | clang-[678][0-9][0-9]-m??)
+        clang | clang-m?? | clang-3.4-m?? | clang-[6789][0-9][0-9]-m??)
             CC="clang"; CXX="clang++" ;; # standard system compiler
         clang-[3].[0-9]-m??)
             v=${BM_C:6:3}; CC="clang-$v"; CXX="clang++-$v"; SCAN_BUILD="scan-build-$v" ;;
