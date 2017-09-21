@@ -25,6 +25,9 @@ declare +x UPX_AUTOMATIC_BUILDS_SSL_KEY UPX_AUTOMATIC_BUILDS_SSL_IV
 # compatibility wrappers
 if [[ $TRAVIS_OS_NAME == osx ]]; then
 # use GNU coreutils ("brew install coreutils")
+chmod() {
+    gchmod "$@"
+}
 date() {
     gdate "$@"
 }

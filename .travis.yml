@@ -184,11 +184,11 @@ matrix:
       addons: { apt: { sources: *S, packages: [ "clang-3.9" ] } }
     - os: linux
       compiler: gcc
-      env: CROSS=arm-linux-gnueabi C=gcc-4.6 T=SKIP
+      env: CROSS=arm-linux-gnueabi C=gcc-4.6 T=qemu
       addons: { apt: { packages: [ "g++-arm-linux-gnueabi", "qemu-user" ] } }
     - os: linux
       compiler: gcc
-      env: CROSS=arm-linux-gnueabihf C=gcc-4.6 T=SKIP
+      env: CROSS=arm-linux-gnueabihf C=gcc-4.6 T=qemu
       addons: { apt: { packages: [ "g++-arm-linux-gnueabihf", "qemu-user" ] } }
     - os: linux
       compiler: gcc
